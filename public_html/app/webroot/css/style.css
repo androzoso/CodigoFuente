@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
 .container
 {
 	background-color: #ffffff; 
@@ -14,6 +16,17 @@ h6{
 	margin:2px;
 	padding: 2px;
 	text-align: right;
+}
+
+.letra{
+	font-size: 18px;
+	text-align: justify;
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.letra1{
+	text-align: justify;
+	font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .right{
@@ -64,12 +77,12 @@ h6{
 }  
 
 #leftMenu .accordion-heading  a{  
-    color: #000; /* text color */
+    color: #696868; /* text color */
     text-decoration:none;  
 }
 
 #leftMenu .accordion-heading  a:hover{  
-    color:#008084;     
+    color:#000;     
 }
 
 #leftMenu .accordion-heading .active {
@@ -93,14 +106,14 @@ h6{
 
 .detperfil{
 	border: 1px solid #008084;
-	padding: 5px 12px;
-	height: 158px;
+	padding: 8px 20px;
+	height: 195px;
 }
 
 .name{
-	text-align: right;
-	margin:5px;
-	padding:5px;
+	text-align:right;
+	margin:3px;
+	padding:3px;
 }
 
 .imgend{
