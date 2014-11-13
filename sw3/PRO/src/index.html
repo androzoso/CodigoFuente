@@ -5,11 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Módulo Ondas</title>
 	<link rel="icon" href="img/pag/icon.png" type="image/x-icon">
-	<link rel="stylesheet" href="cake.generic.css">
+	<link rel="stylesheet" href="css/cake.generic.css">
 	<link rel="stylesheet" href="css/bootstrap.css">	
 	<link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body ng-app="MyApp">
 	<div class="container">
 		<div class="row header">
 			<div class="col-md-6"><img src="img/pag/logo.png" alt="logo"></div>
@@ -17,22 +18,22 @@
 				<div class="right">
 					<h6>Bienvenido/a</h6>
 					<h6>Nombre del Usuario</h6>
-					<h6>Mi ultimo ingreso: dd/mm/aaaa</h6>
+					<h6>Mi ultimo ingreso: 05/11/2014</h6>
 					<ul class="menu">
 						<li>
-							<a href="http://facebook.com" target="blank">
+							<a href="http://facebook.com/colciencias" target="blank">
 								<img src="img/icon/Facebook.png" width='23' height='23' alt="icon facebook" title="Facebook"/>
 							</a>
 						</li>
 					
 						<li>
-							<a href="http://twitter.com" target="blank">
+							<a href="http://twitter.com/colciencias" target="blank">
 								<img src="img/icon/Twitter-Bird.png" width='23' height='23' alt="icon twitter" title="Twitter"/>
 							</a>
 						</li>
 					
 						<li>
-							<a href="http://youtube.com" target="blank">
+							<a href="http://youtube.com/user/colciencias" target="blank">
 								<img src="img/icon/Youtube.png" width='23' height='23' alt="icon youtube" title="Youtube"/>
 							</a>
 						</li>
@@ -95,6 +96,7 @@
                                   <i class="icon-home"></i> Comunidad Ondas
                             </a>
                         </div>
+
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
@@ -105,9 +107,11 @@
                         <div id="collapseTwo" class="accordion-body collapse" style="height: 0px; ">
                             <div class="accordion-inner">
                                 <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
+                                    <li>Grupos</li>
+                                    <li>Lineas</li>
+                                    <li>Redes Territoriales</li>
+                                    <li>Redes Actores</li>
+                                    <li>Redes Temáticas</li>
                                 </ul>
                             </div>
                         </div>
@@ -115,18 +119,19 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseThree">
-                                <i class="icon-th-list"></i>Comunicación
+                                <i class="icon-th-list"></i> Comunicación
                             </a>
                         </div>
                         <div id="collapseThree" class="accordion-body collapse" style="height: 0px; ">
                             <div class="accordion-inner">
                                 <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>                 
+                                    <li>Blog</li>
+                                    <li>Tablero</li>
+                                    <li>Noticias</li>
+                                    <li>Eventos</li>
+                                </ul>
                             </div>
-                         </div>
+                        </div>
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
@@ -137,12 +142,12 @@
                         <div id="collapseFour" class="accordion-body collapse" style="height: 0px; ">
                             <div class="accordion-inner">
                                 <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>                 
+                                    <li>Asesoría Visual</li>
+                                    <li>Reproducción de Teleconferencias</li>
+                                    <li>Foros</li>
+                                </ul>
                             </div>
-                         </div>
+                        </div>
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
@@ -153,12 +158,12 @@
                         <div id="collapseFive" class="accordion-body collapse" style="height: 0px; ">
                             <div class="accordion-inner">
                                 <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>                 
+                                    <li>Wiki</li>
+                                    <li>Buscadores</li>
+                                    <li>Análisis de Información Colaborativa</li>
+                                </ul>
                             </div>
-                         </div>
+                        </div>
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
@@ -169,44 +174,40 @@
                         <div id="collapseSix" class="accordion-body collapse" style="height: 0px; ">
                             <div class="accordion-inner">
                                 <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>                 
+                                    <li>Encuestas</li>
+                                    <li>Formato Evaluación Feria</li>
+                                </ul>
                             </div>
-                         </div>
+                        </div>
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseSix">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseSeven">
                                 <i class="icon-file"></i> Formación
                             </a>
                         </div>
-                        <div id="collapseSix" class="accordion-body collapse" style="height: 0px; ">
+                        <div id="collapseSeven" class="accordion-body collapse" style="height: 0px; ">
                             <div class="accordion-inner">
                                 <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>                 
+                                    <li>e-Learning</li>
+                                </ul>
                             </div>
-                         </div>
+                        </div>
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseSix">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseEight">
                                 <i class="icon-file"></i> Innovación
                             </a>
                         </div>
-                        <div id="collapseSix" class="accordion-body collapse" style="height: 0px; ">
+                        <div id="collapseEight" class="accordion-body collapse" style="height: 0px; ">
                             <div class="accordion-inner">
                                 <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>                 
+                                    <li>Material de Consulta</li>
+                                    <li>Bibliotecas públicas y privadas</li>
+                                </ul>
                             </div>
-                         </div>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -215,7 +216,7 @@
 			</div>
 			<div class="col-md-7">
 				<div class="centroup">
-					<a href="#"><h6 class="left"><u>Inicio </u> / </h6></a>
+					<a href="http://www.colciencias.gov.co/" target="blank"><h6 class="left"><u>Inicio </u> / </h6></a>
 					<a href="#"><h6 class="left"><u>Mi Comunidad </u></h6></a>
 				</div>
 				<div class="centroa">
@@ -226,12 +227,39 @@
 					<img src="img/pag/inv1.png" alt="inv">
 				</div>
 				<div class="nota">
+                    
 					<h3>Noticias</h3>
 					<img src="img/pag/investigador.png" alt="investigador">
-					<h5><b>Convocatorias para niños investigadores</b></h5>
+					<h5><b>Convocatorias Para Niños Investigadores</b></h5>
 					<p>Se convocan a niños que les guste investigar, para hacer parte de la comunidad ondas, donde se podra interactuar con otros niños investigadores, científicos,etc. </p>
-					<a href="#"><h6><u>Leer más...</u></h6></a>
-				</div>
+					<div ng-controller="FormController">                    
+                    <a data-toggle="modal" data-target="#myModal" ng-click="detaills(id)">
+                        <h6><u>Leer más...</u></h6>
+                    </a>
+                    <div class="modal fade bs-example-modal-lg" id="myModal" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="letra1">{{datos.titulo}}</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table table-condensed">
+                                        <tr>
+                                          <td class="active"><img ng-src="{{datos.img}}"/></td>
+                                          <td class="info">
+                                            <h3 class="letra">{{datos.descripcion}}</h3>   
+                                          </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div> 
 			</div>
 			<div class="col-md-2">
 				<div class="perfil"><h4>Recursos</h4></div>
@@ -245,131 +273,78 @@
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseTwo">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
                                 <i class="icon-th"></i> Proyectos
                             </a>
                         </div>
-                        <div id="collapseTwo" class="accordion-body collapse" style="height: 0px; ">
-                            <div class="accordion-inner">
-                                <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseThree">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
                                 <i class="icon-th-list"></i> Bibliográficos
                             </a>
                         </div>
-                        <div id="collapseThree" class="accordion-body collapse" style="height: 0px; ">
-                            <div class="accordion-inner">
-                                <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>                 
-                            </div>
-                         </div>
+                        
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFour">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
                                 <i class="icon-list-alt"></i> Científicos
                             </a>
                         </div>
-                        <div id="collapseFour" class="accordion-body collapse" style="height: 0px; ">
-                            <div class="accordion-inner">
-                                <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>                 
-                            </div>
-                         </div>
+                        
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFive">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
                                 <i class="icon-cog"></i> Técnicos
                             </a>
                         </div>
-                        <div id="collapseFive" class="accordion-body collapse" style="height: 0px; ">
-                            <div class="accordion-inner">
-                                <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>                 
-                            </div>
-                         </div>
+                        
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseSix">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
                                 <i class="icon-file"></i> Herramientas
                             </a>
                         </div>
-                        <div id="collapseSix" class="accordion-body collapse" style="height: 0px; ">
-                            <div class="accordion-inner">
-                                <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>                 
-                            </div>
-                         </div>
+                        
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseSix">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
                                 <i class="icon-file"></i> Archivo
                             </a>
                         </div>
-                        <div id="collapseSix" class="accordion-body collapse" style="height: 0px; ">
-                            <div class="accordion-inner">
-                                <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>                 
-                            </div>
-                         </div>
+                        
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseSix">
-                                <i class="icon-file"></i> Recursos de Gestión
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-file"></i> Gestión
                             </a>
                         </div>
-                        <div id="collapseSix" class="accordion-body collapse" style="height: 0px; ">
-                            <div class="accordion-inner">
-                                <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>                 
-                            </div>
-                         </div>
+                        
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseSix">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseNine">
                                 <i class="icon-file"></i> Recursos Básicos
                             </a>
                         </div>
-                        <div id="collapseSix" class="accordion-body collapse" style="height: 0px; ">
+                        <div id="collapseNine" class="accordion-body collapse" style="height: 0px; ">
                             <div class="accordion-inner">
                                 <ul>
-                                    <li>This is one</li>
-                                    <li>This is two</li>
-                                    <li>This is Three</li>
-                                </ul>                 
+                                    <li>Diccionario</li>
+                                    <li>Traductor</li>
+                                    <li>Corrector</li>
+                                    <li>Calculadora</li>
+                                    <li>Tabla periódica</li>
+                                    <li>Conversor</li>
+                                </ul>
                             </div>
-                         </div>
+                        </div>
                     </div>
                 </div>
                 <div class="piemenu"></div>
@@ -379,6 +354,9 @@
 			<h5>Horario de atención al público: lunes a viernes: 8:00 am a 5:00 pm. Correo electrónico: contacto@colciencias.gov.co</h5>
 		</div>
 	</div>
-	
+	<script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
